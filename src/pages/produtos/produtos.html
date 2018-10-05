@@ -1,0 +1,30 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Produtos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h3>Nome das Categorias</h3>
+  <ion-list>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="https://png.pngtree.com/svg/20170719/ionic_1307248.png">
+        </ion-thumbnail>
+        <h2>Curso de Ionic</h2>
+        <p>R$ 3.988,00</p>
+        <button ion-button clear item-end (click)="navProdutoDetalhe()">View</button>
+      </ion-item>
+      <ion-item>
+      <ion-thumbnail item-start>
+            <img src="https://angular.io/assets/images/logos/angular/angular.png">
+          </ion-thumbnail>
+          <h2>Curso de Angular Completo</h2>
+          <p>R$ 2.499,99</p>
+          <button ion-button clear item-end (click)="navProdutoDetalhe()">View</button>
+        </ion-item>
+    </ion-list>
+</ion-content>
