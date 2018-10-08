@@ -1,0 +1,41 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-navbar>
+    
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Perfil</ion-title>
+      </ion-navbar>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <img src="https://publicdomainvectors.org/photos/abstract-user-flat-4.png">
+
+  <h3>Usuário</h3>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-input type="text" placeholder="Nome"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" placeholder="Nova Senha"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" placeholder="Repetir Senha"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" placeholder="Endereço"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="number" placeholder="Numero"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+  <button ion-button full block (click)="atualizar()">Atualizar</button>
+</ion-content>
