@@ -10,16 +10,20 @@ import { Produto } from '../../model/produto';
 })
 export class ProdutosPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-  
-  produtos: Produto[] = PRODUTOS;
+  id_categoria : number;
+  produtos : Produto[] = [];
 
-  /*
-  recarrregar a pagina
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ProdutosPage');
-  }*/
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.id_categoria = this.navParams.get('id');
+
+    for (var item in PRODUTOS){
+      if(PRODUTOS[item].categoria_id==this.id_categoria){
+        this.produtos.push(PRODUTOS[item]);
+      }
+    }
+  }
+
 navProdutoDetalhe(produto : Produto){
   this.navCtrl.push('ProdutoDetalhePage',{produto : produto});
   }
